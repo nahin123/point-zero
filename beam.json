@@ -1,0 +1,24 @@
+{
+    "import": [
+        "http://packages:satis@packages.littlegiantdev.co.nz/silverstripe-config.json"
+    ],
+    "exclude": {
+        "patterns": [
+            "themes/base/source/",
+            "themes/base/node_modules/",
+            "themes/base/build_tasks/"
+        ]
+    },
+    "servers": {
+        "staging": {
+            "user": "staging",
+            "host": "staging",
+            "webroot": "/var/www/vhosts/littlegiantdev.co.nz/blueprint"
+        },
+        "live": {
+            "user" : "blueprint",
+            "host" : "blueprint",
+            "webroot" : "/var/www/vhosts/myblueprint.co.nz/httpdocs"
+        }
+    }
+}

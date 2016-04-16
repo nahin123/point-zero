@@ -1,0 +1,60 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages:satis@packages.littlegiantdev.co.nz"
+        }
+    ],
+    "name": "littlegiant/installer",
+    "require": {
+        "php": ">=5.3.2",
+        "silverstripe/cms": "~3.2.0",
+        "silverstripe/framework": "~3.2.0",
+        "silverstripe/siteconfig": "~3.2.0",
+        "silverstripe/reports": "~3.2.0",
+        "silverstripe/googlesitemaps": "1.2.2",
+        "heyday/silverstripe-hashpath": "2.0.1",
+        "littlegiant/silverstripe-giantenvironment": "~0.2.0",
+        "littlegiant/silverstripe-browsersupport": "~1.1.1",
+        "littlegiant/silverstripe-catalogmanager": "~2.1.0",
+        "littlegiant/silverstripe-singlepageadmin": "~2.0.0",
+        "kinglozzer/metatitle": "~1.0.0",
+        "camspiers/honeypot": "~2.0.0",
+        "tractorcow/silverstripe-akismet": "~3.1.0",
+        "jonom/silverstripe-betternavigator": "~2.0.0",
+        "stevie-mayhew/silverstripe-svg": "~1.1.0",
+        "mobiledetect/mobiledetectlib": "~2.8.0",
+        "silverstripe-australia/grouped-cms-menu": "~2.2.0",
+        "drewm/mailchimp-api": "~1.0.0",
+        "littlegiant/silverstripe-seo-editor": "~1.0.1",
+        "tractorcow/silverstripe-opengraph": "~3.1.0",
+        "silverstripe/blog": "~2.1.0",
+        "unclecheese/betterbuttons": "~1.2.0",
+        "ryanpotter/silverstripe-cms-theme": "~0.4.0",
+        "camspiers/silverstripe-loggerbridge": "~0.6.0",
+        "heyday/silverstripe-backstop": "~0.1.1",
+        "raven/raven": "~0.11.0",
+        "league/fractal": "^0.13.0",
+        "respect/validation": "^1.0.3",
+        "firebase/php-jwt": "^3.0",
+        "justinrainbow/json-schema": "~1.5",
+        "rize/uri-template": "~0.3",
+        "mikey179/vfsStream": "^1.6",
+        "littlegiant/silverstripe-seeder": "~2.0.0",
+        "nuovo/spreadsheet-reader": "^0.5.11"
+    },
+    "require-dev": {
+        "gdmedia/ss-auto-git-ignore": "~0.0.1"
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "extra": {
+        "installer-paths": {
+            "betternavigator": ["jonom/silverstripe-betternavigator"]
+        }
+    },
+    "scripts": {
+        "post-update-cmd": "GDM\\SSAutoGitIgnore\\UpdateScript::Go"
+    }
+}
